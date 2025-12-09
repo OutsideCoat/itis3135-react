@@ -5,6 +5,7 @@ const primaryLinks = [
   { to: "/", label: "Home", end: true },
   { to: "/introduction", label: "Introduction" },
   { to: "/contract", label: "Contract" },
+  { to: "/students", label: "Students" },
 ];
 
 function NavPrimary() {

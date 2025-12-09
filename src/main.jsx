@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import Home from "./pages/home.jsx";
 import Introduction from "./pages/introduction.jsx";
 import Contract from "./pages/contract.jsx";
+import Students from "./pages/students.jsx";
 import "./styles/global.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route index element={<Home />} />
           <Route path="introduction" element={<Introduction />} />
           <Route path="contract" element={<Contract />} />
+          <Route path="students" element={<Students />} />
         </Route>
       </Routes>
     </BrowserRouter>

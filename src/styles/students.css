@@ -1,0 +1,263 @@
+.students-page {
+  width: 100%;
+  text-align: left;
+}
+
+.students-page__intro {
+  margin-bottom: 1rem;
+}
+
+.students-page__intro h2 {
+  margin-bottom: 0.35rem;
+}
+
+.students-page__intro p {
+  margin: 0.25rem 0 0;
+}
+
+.students-controls {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #d7dde5;
+  border-radius: 10px;
+  background: #f7f9fb;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.students-controls__search {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+.students-controls__search input {
+  width: 100%;
+  max-width: 480px;
+  align-self: flex-start;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #b7c2cc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.students-controls__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.students-controls__buttons button {
+  padding: 0.55rem 0.9rem;
+  border: 1px solid #8aa2b5;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #0f3558;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.students-controls__buttons button.active {
+  background: #0f6db6;
+  color: #ffffff;
+  border-color: #0f6db6;
+}
+
+.students-controls__buttons button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.students-status {
+  margin: 1rem 0;
+  font-weight: 600;
+  color: #1f2a33;
+}
+
+.students-status--error {
+  color: #b00020;
+}
+
+.students-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.student-card {
+  background: #ffffff;
+  border: 1px solid #e0e4e8;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.student-card__header {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.student-card__title {
+  flex: 1;
+}
+
+.student-card__prefix {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #4c6475;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.student-card__name {
+  margin: 0.15rem 0;
+  font-size: 1.2rem;
+}
+
+.student-card__mascot {
+  margin: 0;
+  color: #0f6db6;
+  font-weight: 600;
+}
+
+.student-card__ack,
+.student-card__platform {
+  margin: 0.15rem 0;
+  color: #3e4a55;
+  font-size: 0.95rem;
+}
+
+.student-card__media {
+  margin: 0;
+  text-align: center;
+}
+
+.student-card__media img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #d8dde2;
+}
+
+.student-card__media figcaption {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.35rem;
+}
+
+.student-card__backgrounds {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.4rem 1rem;
+  margin: 0;
+}
+
+.student-card__backgrounds dt {
+  font-weight: 700;
+}
+
+.student-card__backgrounds dd {
+  margin: 0.1rem 0 0.5rem;
+  color: #2e363d;
+}
+
+.student-card__courses h4,
+.student-card__links h4 {
+  margin: 0 0 0.35rem;
+}
+
+.student-card__courses ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1rem;
+}
+
+.student-card__courses li {
+  margin: 0.2rem 0;
+}
+
+.student-card__statement,
+.student-card__fact,
+.student-card__additional {
+  margin: 0.2rem 0;
+}
+
+.student-card__quote {
+  margin: 0.4rem 0;
+  padding: 0.6rem 0.75rem;
+  background: #f6f8fb;
+  border-left: 3px solid #0f6db6;
+  border-radius: 6px;
+}
+
+.student-card__quote cite {
+  display: block;
+  margin-top: 0.35rem;
+  color: #555;
+  font-style: normal;
+}
+
+.student-card__linklist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.8rem;
+}
+
+.student-card__linklist a {
+  color: #0a5ea8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.student-card__linklist a:hover {
+  text-decoration: underline;
+}
+
+.students-single {
+  width: 100%;
+  margin-top: 0.75rem;
+}
+
+.students-single__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.students-single__controls span {
+  font-weight: 600;
+  color: #1f2a33;
+}
+
+@media (max-width: 640px) {
+  .student-card__header {
+    flex-direction: column;
+  }
+
+  .student-card__media img {
+    width: 100%;
+    height: auto;
+  }
+
+  .students-controls__search input {
+    max-width: 100%;
+  }
+}
